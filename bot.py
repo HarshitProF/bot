@@ -1,5 +1,5 @@
 import telebot
-API_TOKEN = '5756205355:AAGWUcgsAC74ola3RCS7wuMubrCAxXKG598'
+API_TOKEN = '5842395377:AAGZ41Y4cpIisIBfrS7b3dxOxZ3qyb9ySvU'
 bot = telebot.TeleBot(API_TOKEN)
 @bot.message_handler(func=lambda message: True)
 def echo_message(message):
