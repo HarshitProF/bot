@@ -20,4 +20,3 @@ def echo_message(message):
     bot.send_message(message.from_user.id ,text=message1)
     bot.send_message(message.from_user.id ,text=message2)
     bot.send_message(message.from_user.id ,text=message3)
-bot.infinity_polling()
