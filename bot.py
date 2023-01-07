@@ -4,6 +4,7 @@ bot = telebot.TeleBot(API_TOKEN)
 @bot.message_handler(func=lambda message: True)
 def echo_message(message):
     text=str(message.text)
+    print(text)
     messa=text.split("\n")
     data={
         "dat":messa[0],
@@ -20,3 +21,4 @@ def echo_message(message):
     bot.send_message(message.from_user.id ,text=message1)
     bot.send_message(message.from_user.id ,text=message2)
     bot.send_message(message.from_user.id ,text=message3)
+bot.infinity_polling()
